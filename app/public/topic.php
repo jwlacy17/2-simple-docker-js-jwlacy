@@ -59,7 +59,7 @@
         <th scope="row">2</th>
         <td>Title Two</td>
         <td>Jake dagfdsa</td>
-        <td> 1998 </td>
+        <td> 1999 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
         <td> $25 </td>
@@ -77,19 +77,19 @@
         <th scope="row">4</th>
         <td>Title Four</td>
         <td>Jake dagfdsa</td>
-        <td> 1998 </td>
+        <td> 1997 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
-        <td> $25 </td>
+        <td> $251 </td>
       </tr>
       <tr>
         <th scope="row">5</th>
         <td>Title Five</td>
         <td>Jake dagfdsa</td>
-        <td> 1998 </td>
+        <td> 1996 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
-        <td> $25 </td>
+        <td> $253 </td>
       </tr>
       <tr>
         <th scope="row">6</th>
@@ -98,25 +98,25 @@
         <td> 1998 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
-        <td> $25 </td>
+        <td> $249 </td>
       </tr>
       <tr>
         <th scope="row">7</th>
         <td>Title Seven</td>
         <td>Jake dagfdsa</td>
-        <td> 1998 </td>
+        <td> 1994 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
-        <td> $25 </td>
+        <td> $26 </td>
       </tr>
       <tr>
         <th scope="row">7</th>
         <td>Title Eight</td>
         <td>Jake dagfdsa</td>
-        <td> 1998 </td>
+        <td> 1993 </td>
         <td> XYZ Company </td>
         <td> 350 </td>
-        <td> $25 </td>
+        <td> $27 </td>
       </tr>
     </tbody>
   </table>
