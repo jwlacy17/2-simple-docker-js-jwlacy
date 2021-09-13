@@ -32,7 +32,7 @@
   <div class="p-5 text-center bg-light">
     <h1 class="mb-3">Books</h1>
 
-  <table class="table">
+  <table id="taskTable" class="table">
     <thead class="thead-dark">
       <tr>
         <th scope="col">#</th>
@@ -151,6 +151,9 @@
     <button type="submit" class="btn btn-primary">Submit</button>
   </form>
 </div>
-
+<script src="js/tablesort.min.js"></script>
+<script>
+  new Tablesort(document.getElementById('taskTable'));
+</script>
   </body>
 </html>
