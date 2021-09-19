@@ -34,21 +34,21 @@
     </nav>
 <!-- Template from bootstrap -->
 
-  <h1 align="center"> About John Doe </h1>
-<div id="app">
-  <div class="card">
-    <img v-bind:src="picture" alt="User" >
-    <h2>{{firstName}} {{lastName}}</h2>
-    <p> {{country}}</p>
-    <p> Birthday: {{birthday}} </p>
-    <p> Age: {{age}} </p>
-    <a v.bind:href="'mailto:' + email">{{email}}</a>
-    <!-- vbind from 
-    <!-- <button :class="gender" @click="getUser()">Get Random User</button> -->
-  </div>
-  <!-- Template from W3 schools + code.io --> 
-</div>
 
-  <script src="js/randomuser.js"></script>
+<div class="container">
+  <div class="row align-items-start">
+    <div class="col col-4">
+    </div>
+    <div id="offerApp" class="col col-8">
+      <h1>About</h1>
+      <p> <img v-bind:src="person.picture.thumbnail" ></p>
+      <p> Name: {{ person.name.first }} {{ person.name.last }}</p>
+      <p> Country: {{ person.location.country }}</p>
+      <p> Birthday: {{ person.dob.date }}</p>
+      <p> Age: {{ person.dob.age }}</p>
+      <p> Email: <a v-bind:href="'mailto:'+person.email">{{ person.email }}</a></p>
+    </div>
+
+  <script src="js/index.js"></script>
   </body>
 </html>
