@@ -16,11 +16,10 @@ img {
   border: 1px solid #ddd; /* Gray border */
   border-radius: 4px;  /* Rounded border */
   padding: 5px; /* Some padding */
-  width: 300px; /* Set a small width */
+  /* width: 300px; Set a small width */
   margin: 0 auto;
   text-align: center;
   display: block;
-
 }
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
@@ -75,5 +74,3 @@ p {
 .home {
   text-align: center;
 }
-
-
