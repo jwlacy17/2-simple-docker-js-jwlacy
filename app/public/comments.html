@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Comments</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/tablesort.css">
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  </head>
+  <body>
+
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">JL</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="index.html">Home </a>
+          <a class="nav-item nav-link" href="pictures.html">Pictures</a>
+          <a class="nav-item nav-link" href="about.html">About </a>
+          <a class="nav-item nav-link" href="topic.html">Books</a>
+          <a class="nav-item nav-link" href="hoosiers.html">Hoosiers</a>
+        </div>
+      </div>
+    </nav>
+
+  <div id="offerApp" class="container">
+  <div class="row align-items-start">
+  <h1> Comments Table </h1>
+  <table class="table" id="commentTable">
+    <thead>
+      <tr>
+        <th>Comment ID</th>
+        <th>Comment Text</th>
+      </tr>
+    </thead>
+      <tbody id="commentTableBody">
+          <tr v-for="c in comments">
+              <td>{{ c.id }}</td>
+              <td>{{ c.commentText }}</td>
+          </tr>
+      </tbody>
+  </table>
+
+  <form id="newCommentForm" v-on:submit.prevent="postNewComment">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Comment Text</label>
+      <input type="text" class="form-control" v-model="commentForm.commentText" id="commentText">
+    </div>
+    <button type="submit" class="btn btn-primary" id="submitNewComment">Submit Comment</button>
+  </form>
+</div>
+</div>
+
+<script src="js/tablesort.min.js"></script>
+<script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+<script src="js/index1.js"></script>
+<!-- <script>
+  new Tablesort(document.getElementById('taskTable'));
+</script> -->
+</body>
+</html>
